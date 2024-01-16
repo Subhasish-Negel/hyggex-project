@@ -34,20 +34,7 @@ body {
   transform: rotateY(180deg);
 }
 
-/* .application {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: yellow;
-  }
-  
-  .title {
-    font-size: 10rem;
-  } */
-
 .cursor {
-  /*background-color: white;*/
   height: 32px;
   width: 32px;
   border-radius: 50%;

@@ -18,7 +18,9 @@ export default function Home() {
         <AnimatedCard />
         <CardBottom />
       </div>
-      <Publishedby />
+      <div className="my-10">
+        <Publishedby />
+      </div>
     </main>
   );
 }
