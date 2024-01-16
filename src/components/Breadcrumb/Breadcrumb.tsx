@@ -9,7 +9,7 @@ const Breadcrumb = () => {
           <li className="inline-flex items-center">
             <a
               href="/"
-              className="inline-flex items-center text-sm font-medium"
+              className="inline-flex items-center text-sm font-semibold text-[#696671]"
             >
               <GrHomeRounded className="font-bold text-lg text-[#696671] size-5" />
               <MdKeyboardArrowRight className="text-2xl font-black text-[#06286e]" />
@@ -20,8 +20,8 @@ const Breadcrumb = () => {
             <div className="flex items-center">
               <MdKeyboardArrowRight className="text-2xl font-black text-[#06286e]" />
               <a
-                href="#"
-                className="ms-1 text-sm font-medium text-[#696671] md:ms-2"
+                href="/"
+                className="ms-1 text-sm font-semibold text-[#696671] md:ms-2"
               >
                 Mathematics
               </a>
@@ -31,7 +31,7 @@ const Breadcrumb = () => {
             <div className="flex items-center">
               <MdKeyboardArrowRight className="text-2xl font-black text-[#06286e]" />
 
-              <span className="ms-1 text-sm font-medium text-[#06286e] md:ms-2 ">
+              <span className="ms-1 text-sm font-semibold text-[#06286e] md:ms-2 ">
                 Relation and Function
               </span>
             </div>
