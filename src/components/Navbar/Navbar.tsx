@@ -8,8 +8,9 @@ const Navbar = () => {
         className="h-[40px] w-[190] cursor-pointer"
         src="/logo.svg"
         alt="Logo"
-        height={200}
+        height={80}
         width={200}
+        priority
       ></Image>
       <div className="flex">
         <ul className="flex space-x-8 my-[13px] font-medium">
