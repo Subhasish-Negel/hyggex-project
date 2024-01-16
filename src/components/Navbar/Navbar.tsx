@@ -6,7 +6,7 @@ const Navbar = () => {
     <div className="px-[102px] pt-[30px] flex justify-between ">
       <Image
         className="h-[40px] w-[190] cursor-pointer"
-        src="/logo.svg"
+        src="/Logo.svg"
         alt="Logo"
         height={80}
         width={200}
