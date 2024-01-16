@@ -2,18 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,4 +14,104 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+/** {*/
+/*  cursor: none;*/
+/*}*/
+.flip-card-inner {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* .application {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: yellow;
+  }
+  
+  .title {
+    font-size: 10rem;
+  } */
+
+.cursor {
+  /*background-color: white;*/
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 999;
+  transition-duration: 80ms;
+}
+
+.toggler {
+  background: linear-gradient(
+    to right,
+    #af66f3,
+    #af66f3,
+    #ee4447,
+    #af66f3,
+    #af66f3
+  ); /* Use a linear gradient from black to white */
+  background-size: 200% 100%; /* Set the size of the gradient to twice the container's width */
+  height: 100%;
+  border-radius: 50%;
+  padding: 2px;
+  animation: toggleBackground 5s infinite; /* Set the total duration to 2 seconds (1s for each color transition) */
+}
+
+@keyframes toggleBackground {
+  0% {
+    background-position: 100% 0; /* Start with the gradient fully to the left */
+  }
+  50% {
+    background-position: 0 0; /* Move the gradient to the right at 50% */
+  }
+  100% {
+    background-position: -100% 0; /* Move the gradient back to the left at 100% */
+  }
+}
+
+.hover1 {
+  transition-duration: 2s;
+  animation: hover 1.2s infinite;
+}
+.hover2 {
+  transition-duration: 2s;
+  animation: hover 2s infinite;
+}
+.hover3 {
+  transition-duration: 2s;
+  animation: hover 2.5s infinite;
+}
+.hover4 {
+  transition-duration: 2s;
+  animation: hover 1.5s infinite;
+}
+
+@keyframes hover {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 0px;
+  }
+  100% {
+    bottom: 20px;
+  }
 }
